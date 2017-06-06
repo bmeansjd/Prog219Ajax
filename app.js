@@ -7,8 +7,9 @@ var bodyParser = require('body-parser');
 // Database
 var mongo = require('mongodb');
 var monk = require('monk');
-
-var db = monk('mongodb://bmeansjd:idabwells1@ds062889.mlab.com:62889/fluffyella')
+//mongodb://<dbuser>:<dbpassword>@ds062889.mlab.com:62889/fluffyella
+//mongo ds062889.mlab.com:62889/fluffyella -u westmontluda -p idabwells1
+var db = monk('mongodb://bob:idabwells1@ds062889.mlab.com:62889/fluffyella');
 
 var index = require('./routes/index');
 var users = require('./routes/users');

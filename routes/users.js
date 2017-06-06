@@ -6,6 +6,7 @@ var router = express.Router();
  */
 router.get('/userlist', function(req, res) {
     var db = req.db;
+    console.log('starting RouteGet');
     var collection = db.get('userlist');
     collection.find({},{},function(e,docs){
         res.json(docs);
